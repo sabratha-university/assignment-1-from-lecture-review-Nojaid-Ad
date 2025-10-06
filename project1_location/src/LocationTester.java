@@ -3,7 +3,8 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class LocationTester {
-
+    //Declared as static because any static methods can't dirctly access to not a static members (main method)
+    //final to prevent reassignment
     static final Scanner input = new Scanner(System.in);
 
     private static void getUserLocation(SimpleLocation other) {
