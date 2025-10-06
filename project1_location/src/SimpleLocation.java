@@ -4,11 +4,12 @@ public class SimpleLocation {
     private double latitude;
     private double longitude;
 
+    //Default constructor initialize the locaton at (0,0)
     public SimpleLocation() {
         latitude = 0;
         longitude = 0;
     }
-
+    //Overloaded constructor
     public SimpleLocation(double lat, double lon) {
         if (lat >= -90 && lat <= 90) {
             this.latitude = lat;
@@ -25,10 +26,11 @@ public class SimpleLocation {
         }
     }
 
+    //Overloading method
     public double distance(SimpleLocation other) {
         return getDistance(this.latitude, this.longitude, other.latitude, other.longitude);
     }
-
+    //Overloading method have the same name and diffrent parameters
     public double distance(double lat, double lon) {
         return getDistance(this.latitude, this.longitude, lat, lon);
     }
@@ -47,6 +49,7 @@ public class SimpleLocation {
         return earthRadius * c;
     }
 
+    //Overridng method return readuble object insted of memory refrence
     @Override
     public String toString() {
         return "Location(" + this.latitude + " , " + this.longitude + ")";
