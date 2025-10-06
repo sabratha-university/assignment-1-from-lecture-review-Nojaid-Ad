@@ -15,7 +15,9 @@ Edit the `Main.java` file and:
 3. Identify where **overloading** and **overriding** occur in the code and explain the difference below.
 
 **Answer:**
-> _Write your explanation here..._
+> الفرق بين overloading و  overriding:_
+    overloading -> يحدث عندما يتم تعريف اكثر من دالة بنفس الاسم داخل نفس الكلاس لكن يتم تمرير معاملات بعدد مختلف او نوع مختلف
+    overriding  -> change method behaivorيحدث عندما يتم تعريف  دالة اي تمت وراثتها من سوبر كلاس(الاب) بنفس الاسم والمعاملات داخل سوب كلاس (الابن) وتغير في وظائفها
 
 ---
 
